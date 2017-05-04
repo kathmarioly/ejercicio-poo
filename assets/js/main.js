@@ -1,4 +1,3 @@
-
 function Pokemon(nombre, color, poderDeAtaque){
 	this.nombre = nombre;
 	this.color = color;
@@ -9,7 +8,7 @@ function Pokemon(nombre, color, poderDeAtaque){
 	this.poderDeAtaque = poderDeAtaque;
 
 	this.mostrarPokemon = function(){
-		return("Hola, soy: " + this.nombre + "y doy de color: " + this.color)
+		return("Hola, soy: " + this.nombre + " y soy de color: " + this.color)
 	}
 
 	this.mostrarAmistad = function(){
@@ -21,7 +20,7 @@ function Pokemon(nombre, color, poderDeAtaque){
 }
 
 const Pikachu = new Pokemon("Pikachu", "amarillo", 100)
-const Charmander = new Pokemon("Charmander", "rojo", 20)
+const Charmander = new Pokemon("Charmander", "rojo", 100)
 
 Pikachu.atacar(Charmander)
-document.write(Charmander.vida)
+document.write("La cantidad de vidas de tu Charmander es de: " + Charmander.vida +"<br>" + Pikachu.mostrarPokemon());
