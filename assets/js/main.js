@@ -27,7 +27,7 @@ const Bulbasaur = new Pokemon("Bulbasaur", "celeste", 100)
 Pikachu.atacar(Charmander)
 document.write("La cantidad de vidas de tu Charmander es de: " + Charmander.vida +"<br>" + Pikachu.mostrarPokemon());
 
-function pelea(nombre, color, poderDeAtaque){
+function Pelea(nombre, color, poderDeAtaque){
 	var boton = document.getElementById("boton").value;
 	var opcion1 = document.getElementById("opcion1").value;
 	var opcion2 = document.getElementById("opcion2").value;
