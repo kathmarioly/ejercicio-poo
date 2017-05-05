@@ -22,19 +22,17 @@ function Pokemon(nombre, color, poderDeAtaque){
 const Pikachu = new Pokemon("Pikachu", "amarillo", 100)
 const Charmander = new Pokemon("Charmander", "rojo", 100)
 const Fennekin = new Pokemon("Fennekin", "amarillo con naranjo", 100)
-const Bulbasaur = new Pokemon("Bulbasaur" "celeste", 100)
+const Bulbasaur = new Pokemon("Bulbasaur", "celeste", 100)
 
 Pikachu.atacar(Charmander)
 document.write("La cantidad de vidas de tu Charmander es de: " + Charmander.vida +"<br>" + Pikachu.mostrarPokemon());
 
-function pelea(){
+function pelea(nombre, color, poderDeAtaque){
 	var boton = document.getElementById("boton").value;
 	var opcion1 = document.getElementById("opcion1").value;
 	var opcion2 = document.getElementById("opcion2").value;
-	var opcion3 = document.getElementById("opcion3").value;
-	var opcion4 = document.getElementById("opcion4").value;
 
-if (opcion3 == opcion4) {
+if (opcion1 == opcion2) {
 	alert("Los pokemon no pueden pelear contra si mismos")
 }else{
 
